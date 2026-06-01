@@ -13,7 +13,7 @@ board.left(120)
 board.forward(100)
  
 board.penup()
-board.right(150)
+board.left(150)
 board.forward(50)
  
 # second triangle for star
