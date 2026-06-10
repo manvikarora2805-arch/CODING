@@ -1,0 +1,5 @@
+file=open("lesson14\\Code.txt","r")
+print(file.read(5))
+file.close()
+file=open("lesson14\\Code.txt","a")
+file.write("\n take care")
