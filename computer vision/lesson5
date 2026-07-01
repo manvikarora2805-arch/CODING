@@ -1,0 +1,40 @@
+import cv2
+import matplotlib.pyplot as plt
+image = cv2.imread('computer vision\OIP.jpg')
+image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+f1=image_rgb.copy()
+def load_image(:)
+plt.imshow(image_rgb)
+plt.title("RGB image")
+plt.show()
+f1[:,:,1]=cv2.add(f1[:,:,1],50)
+plt.imshow(f1)
+plt.title("green image")
+plt.show()
+f2=image_rgb.copy()
+f2[:,:,2]=cv2.subtract(f2[:,:,2],50)
+plt.imshow(f2)
+plt.title("RGB image")
+plt.show()
+def blue_tint():
+f3=image_rgb.copy()
+f3[:,:,0]=0
+f3[:,:,1]=0
+plt.imshow(f3)
+plt.title("blue image")
+plt.show()
+def red_tint():
+f4=image_rgb.copy()
+f4[:,:,1]=0
+f4[:,:,2]=0
+plt.imshow(f4)
+plt.title("red image")
+plt.show()
+def green_tint():
+f5=image_rgb.copy()
+f5[:,:,0]=0
+f5[:,:,2]=0
+plt.imshow(f5)
+plt.title("green image")
+plt.show()
+filter=input("enter the filter ")

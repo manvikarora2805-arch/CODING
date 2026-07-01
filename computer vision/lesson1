@@ -5,3 +5,10 @@ cv2.resizeWindow('loaded image',600,400)
 cv2.imshow('loaded image', image)
 cv2.waitKey(0)
 print(image.shape)
+
+
+
+cv2.Sobel(src, ddepth, dx, dy, ksize)
+cv2.Canny(image, threshold1, threshold2)
+cv2.GaussianBlur(image, (ksize, ksize), sigmaX)
+cv2.medianBlur(image, ksize)
